@@ -1331,6 +1331,7 @@ p, .lead {
   border-radius: 3px;
   padding: 10px 30px;
   margin: 20px 0;
+  min-height: 217px;
 }
 @media (min-width: 992px) {
   .contact-box img {
