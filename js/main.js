@@ -20,10 +20,10 @@ $(function() {
   }
   var get_date = $('#countdown').data('event-date');
   if (get_date) {
-    $("#countdown").countdown({
-      date: get_date,
-      format: "on"
-    });
+    // $("#countdown").countdown({
+    //   date: get_date,
+    //   format: "on"
+    // });
   }
   $('#schedule-tabs a').on("click", function(e) {
     e.preventDefault()
@@ -36,8 +36,8 @@ $(function() {
   });
   if ($('.slick-slider').length) {
     $('.slick-slider').slick({
-      slidesToShow: 6,
-      slidesToScroll: 6,
+      slidesToShow: 5,
+      slidesToScroll: 5,
       infinite: true,
       autoplay: false,
       arrows: true,
@@ -92,7 +92,7 @@ $(function() {
   }
   if ($('.speaker-slider').length) {
     $('.speaker-slider').slick({
-      slidesToShow: 6,
+      slidesToShow: 5,
       autoplay: false,
       arrows: true,
       responsive: [{
