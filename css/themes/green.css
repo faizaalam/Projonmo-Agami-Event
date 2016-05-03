@@ -1,0 +1,82 @@
+body, .pace .pace-progress {
+  background: #FFF;
+}
+body, .timeline-content h2 {
+  color: #5c5c5c;
+}
+.nav-pills>li>a {
+  color: #C2C2C2;
+}
+.form-control:focus {
+  border-color: #C2C2C2;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #818181;
+}
+.slick-prev:before, .slick-next:before {
+  color: #C2C2C2;
+}
+::-moz-selection {
+  background: #f05523;
+  color: #FFF;
+}
+::selection {
+  background: #f05523;
+  color: #FFF;
+}
+.header, .sub-header {
+  color: #FFF;
+  background-color: #f05523;
+}
+a, a:hover, a:focus, .speaker-info p, .highlighted-plan .price, .highlighted-plan .plan-name {
+  color: #f05523;
+}
+.benefit-item .benefit-icon i {
+  color: #f05523;
+}
+.timeline::before {
+  background: #f05523;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #FFF;
+  background-color: #f05523;
+}
+.timeline-bullet, .highlighted-plan {
+  border-color: #f05523;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: #f05523;
+}
+.btn-default {
+  color: #f05523;
+  border-color: #FFF;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+  background-color: transparent;
+  border-color: #FFF;
+  color: #FFF;
+}
+.btn-primary {
+  background-color: #5c5c5c;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background-color: #3b3b3b;
+}
+.btn-success {
+  background-color: #f05523;
+  border-color: #f05523;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+  background-color: #FFF;
+  border-color: #f05523;
+  color: #f05523;
+}
+.btn-outline {
+  color: #8C8C8C;
+  border-color: #CACACA;
+}
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+  background-color: transparent;
+  border-color: #818181;
+  color: #8C8C8C;
+}
