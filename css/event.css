@@ -1,3 +1,87 @@
+a:hover{
+  text-decoration: none !important;
+}
+.slick-slide
+{
+  height: auto !important;
+}
+.TweetAuthor-link {
+    line-height: 1.2;
+}
+.tweet {
+    min-height: 16em;
+overflow: hidden;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    max-width: 520px;
+    padding: 1.25rem 1.25rem .725rem 1.25rem;
+    text-decoration: none !important;
+}
+.Tweet-text[dir=ltr] {
+    text-align: left;
+    direction: ltr;
+}
+.TweetAuthor-screenName:before{
+  white-space: pre;
+    content: "\A\200e";
+}
+.Tweet-text {
+    white-space: normal;
+}
+.Tweet-header {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: .85rem;
+    white-space: nowrap;
+}
+.TweetAuthor {
+        margin-top: 2px;
+    
+    max-width: 100%;
+padding-left: 2%;
+    height: 6rem;
+}    
+.TweetAuthor-avatar{
+  position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.Avatar {
+    max-width: 100%;
+    max-height: 100%;
+    }
+    .Identity-name {
+    font-weight: 700;
+}
+.TweetAuthor-verifiedBadge {
+    position: absolute;
+    top: 0;
+}
+.Icon--verified {
+    width: 1.11111em;
+    background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg….164-4.242.01-1.168%201.176-1.163%203.075.01%204.244z%22%2F%3E%3C%2Fsvg%3E);
+}
+.Icon {
+    display: inline-block;
+    height: 1.25em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: text-bottom;
+}
+.TweetAuthor-screenName {
+    font-size: .875rem;
+}
+.Identity-screenName {
+    color: #697882;
+}
 :focus {
     outline: -webkit-focus-ring-color auto 0px;
 }

@@ -114,6 +114,30 @@ $(function() {
       }]
     });
   }
+    if ($('.twitter-slider').length) {
+    $('.twitter-slider').slick({
+      slidesToShow: 3,
+      autoplay: false,
+      arrows: true,
+      responsive: [{
+        breakpoint: 1200,
+        settings: {
+          arrows: true,
+          slidesToShow: 3
+        }
+      }, {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3
+        }
+      }, {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
+    });
+  }
   $(window).scroll(function() {
     if ($(window).scrollTop() > 1000) {
       $('.back_to_top').fadeIn('slow');

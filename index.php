@@ -18,47 +18,7 @@
   content="Projonmo Agami is a TV show for the Bangladeshi Youth. The show focuses on contemporary issues faced by the young people in Bangladesh and features many popular celebrities, musicians and personalities who are changing Bangladesh for the better!
     Be inspired today with Projonmo Agami. Season 3 of Projonmo Agami will be on at 9.35pm, every Wednesday at Channel-i" />
 
-  <!-- <script type="text/javascript">
-    //<![CDATA[
-    try {
-      if (!window.CloudFlare) {
-        var CloudFlare = [{
-          verbose: 0,
-          p: 0,
-          byc: t0,
-          owlid: "cf",
-          bag2: 1,
-          mirage2: 0,
-          oracle: 0,
-          paths: {
-            cloudflare: "/cdn-cgi/nexp/dok3v=1613a3a185/"
-          },
-          atok: "6a86be6116fde9533761d6bb037b48d7",
-          petok: "2cf7ba63e9ff8f92b2d94b095c075669d44e5ea9-1462186743-3600",
-          zone: "web3canvas.com",
-          rocket: "0",
-          apps: {
-            "abetterbrowser": {
-              "ie": "7",
-              "opera": null,
-              "chrome": null,
-              "safari": null,
-              "firefox": null
-            },
-            "ga_key": {
-              "ua": "UA-38030533-1",
-              "ga_bs": "2"
-            }
-          },
-          sha2test: 0
-        }];
-        ! function(a, b) {
-          a = document.createElement("script"), b = document.getElementsByTagName("script")[0], a.async = !0, a.src = "http://ajax.cloudflare.com/cdn-cgi/nexp/dok3v=e982913d31/cloudflare.min.js", b.parentNode.insertBefore(a, b)
-        }()
-      }
-    } catch (e) {};
-    //]]>
-  </script> -->
+  
   <link rel="shortcut icon" href="images/favicon.ico">
 
   <title>Projonmo Agami</title>
@@ -434,7 +394,73 @@
 
 
 
-  <section class="embed_twitter" style="display:none;">
+
+  <section class="embed_twitter" >
+    <div class="container">
+      <div class="section-title wow fadeInUp">
+        <h4>WHAT PEOPLE SAYS</h4>
+        <p>They love it. Read what the previous attendees had to say!</p>
+      </div>
+
+
+      <div class="twitter-slider row">
+      <?php 
+require_once('TwitterAPIExchange.php');
+
+$settings = array(
+    'oauth_access_token' => "3017669893-mfcakkHSTBzUZcKQiIXA4ZoXQ1o1LnH0mY0sbiB",
+    'oauth_access_token_secret' => "Ri544GUI5tgardveeaxgaQOPFUikLW5j5RftgxBUj1o3f",
+    'consumer_key' => "3GavCZuxMpe5k2Vx67UR3bXTX",
+    'consumer_secret' => "xedx0ij8KoydO3Z4BhWcjUXNOOuncKA1erswg3ew0j4Kr8ZD8u"
+);
+$url = 'https://api.twitter.com/1.1/search/tweets.json';
+$getfield = '?q=#batman&count=9';
+$requestMethod = 'GET';
+$twitter = new TwitterAPIExchange($settings);
+$string = json_decode($twitter->setGetfield($getfield)
+->buildOauth($url, $requestMethod)
+->performRequest(),$assoc = TRUE);
+foreach ($string["statuses"] as $tweet) { ?>
+
+	<div class="tweets-info wow fadeIn col-md-4" data-wow-delay="0s">
+		 <div class="tweet-container ">
+             <a href="#" target="">  
+        		<div class="tweet slide " id="tweet-1"> 
+        		<div class="Tweet-header">
+        			<div class="TweetAuthor">
+        			<span class="TweetAuthor-avatar Identity-avatar">
+      <img class="Avatar" data-scribe="element:avatar"  src="<?php  echo $tweet["user"]["profile_image_url"]; ?>">
+    </span>
+<div class="TweetAuthor-name Identity-name customisable-highlight" ><?php echo $tweet["user"]["screen_name"]; ?></div>
+
+<div class="TweetAuthor-screenName Identity-screenName" ><?php echo $tweet["user"]["screen_name"]; ?></div>
+</div>
+</div>
+<div class="Tweet-body e-entry-content" >
+    <p class="Tweet-text e-entry-title" lang="en" dir="ltr"><?php echo $tweet["text"]; ?></p>
+
+
+    <div class="Tweet-metadata dateline">
+      
+
+<p class="time"><?php echo $tweet['created_at']; ?></p>
+    </div>
+
+
+
+  </div>
+
+
+        		</div>
+    		</a>
+		 </div>
+	</div>
+
+<?php } ?> 
+      </div>
+    </div>
+  </section>
+  <!-- <section class="embed_twitter" style="display:none;">
     <div class="container">
       <div class="section-title wow fadeInUp">
         <h4>WHAT PEOPLE SAYS</h4>
@@ -470,7 +496,7 @@
     </div>
 
   </section>
-
+ -->
 
   <section class="gallery" id="gallery">
     <div class="container">
